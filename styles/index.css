@@ -1,77 +1,198 @@
 header {
-    min-height: 500px;
-    /* background-color: violet; */
-    padding: 40px 165px 75px 165px;
-    position: relative;
-    overflow: hidden;
+  min-height: 500px;
+  /* background-color: violet; */
+  padding: 40px 165px 75px 165px;
+  position: relative;
+  overflow: hidden;
 
-    .circle {
-        position: absolute;
-        top: -172px;
-        right: -140px;
-        z-index: -1;
+  .circle {
+    position: absolute;
+    top: -172px;
+    right: -140px;
+    z-index: -1;
+  }
+
+  .nav-div {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 40px;
     }
 
-    .nav-div {
-        display: flex;
-        gap: 64px;
-        align-items: center;
-
-        ul {
-            display: flex;
-            list-style: none;
-            gap: 40px;
-        }
-
-        .nav-btn {
-            justify-self: end;
-            margin-left: auto;
-        }
+    .nav-btn {
+      justify-self: end;
+      margin-left: auto;
     }
+  }
 
-    .header-content {
-        min-height: 200px;
-        margin-top: 74px;
+  .header-content {
+    min-height: 200px;
+    margin-top: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 95px;
+
+    .header-content-left {
+      min-width: 50px;
+
+      .search {
+        width: 445px;
+        background-color: var(--Link-Water-White);
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding-right: 95px;
+        padding-left: 27px;
+        border-radius: 24px;
+        margin-top: 21px;
 
-        .header-content-left {
-            min-width: 50px;
-            
-
-            .search {
-                width: 445px;
-                background-color: var(--Link-Water-White);
-                display: flex;
-                justify-content: space-between;
-                padding-left: 27px;
-                border-radius: 24px;
-                margin-top: 21px;
-
-                input {
-                    border: 0;
-                    background-color: var(--Link-Water-White);
-                    outline: none;
-                    width: 100%;
-                }
-            }
-
-            p {
-                padding-left: 27px;
-                margin-top: 16px;
-
-                
-            }
+        input {
+          border: 0;
+          background-color: var(--Link-Water-White);
+          outline: none;
+          width: 100%;
         }
+      }
 
-        .header-content-right {
-            min-width: 50px;
-            background-color: black;
-            width: 263px;
-            height: 500px;
-            
-        }
+      p {
+        padding-left: 27px;
+        margin-top: 16px;
+      }
     }
+
+    .header-content-right {
+      width: 263px;
+      height: 500px;
+      background-image: url(../assets/home/desktop/illustration-phone-mockup.png);
+      background-size: 134%;
+      background-position: top;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+.ui-ux-circle {
+  position: absolute;
+  z-index: -1;
+  top: 900px;
+  right: -390px;
+}
+
+.partners-section {
+  min-height: 200px;
+  padding: 100px 165px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--Mirage-Blue);
+  position: relative;
+  overflow: hidden;
+
+  .circle_2 {
+    position: absolute;
+    left: -235px;
+    top: -350px;
+  }
+
+  .partners-info {
+    min-width: 50px;
+    min-height: 10px;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+      color: var(--Link-Water-White);
+    }
+
+    p {
+      max-width: 445px;
+      margin: 24px 0 32px 0;
+    }
+  }
+
+  .partners-logos {
+    max-width: 536px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    gap: 39px;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.main-section {
+  min-height: 500px;
+  /* background-color: green; */
+  padding: 143px 165px 93px 165px;
+
+  .implement {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .imp-left {
+      min-width: 445px;
+      min-height: 284px;
+      background-color: var(--Mirage-Blue);
+      border-radius: 8px;
+
+      div {
+        background-color: #2e3f4d;
+        min-height: 40px;
+        padding: 16px 0 12px 12px;
+        display: flex;
+        gap: 6.4px;
+        border-radius: 8px;
+      }
+
+      #pictext {
+        padding: 32px;
+      }
+    }
+
+    .imp-right {
+      p {
+        max-width: 445px;
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .ui-ux {
+    min-height: 200px;
+    /* background-color: purple; */
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    .ui-ux-left {
+      p {
+        max-width: 445px;
+        margin-top: 24px;
+      }
+    }
+    .ui-ux-right {
+      display: flex;
+      gap: 40px;
+
+      img {
+        border-radius: 35px;
+      }
+    }
+  }
 }
