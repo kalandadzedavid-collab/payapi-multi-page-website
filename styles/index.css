@@ -77,6 +77,7 @@ header {
 main {
   position: relative;
   overflow: hidden;
+  padding-bottom: 96px;
 }
 
 .ui-ux-circle {
@@ -196,3 +197,87 @@ main {
     }
   }
 }
+
+.cards-section {
+  min-height: 200px;
+  padding: 0 165px 96px 165px;
+  display: flex;
+  justify-content: space-around;
+
+  .card {
+    min-height: 50px;
+    width: 350px;
+    text-align: center;
+
+    h3 {
+      margin: 32px 0 16px 0;
+    }
+  }
+}
+
+.ready-to-start {
+  padding: 0 165px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+  .search {
+    width: 445px;
+    background-color: var(--Link-Water-White);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 27px;
+    border-radius: 24px;
+   
+
+    input {
+      border: 0;
+      background-color: var(--Link-Water-White);
+      outline: none;
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  padding: 31px 165px;
+  background-color: var(--Mirage-Blue);
+
+  .nav-div {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+
+      li > a {
+        color: var(--Link-Water-White);
+      }
+    }
+
+    .nav-btn {
+      justify-self: end;
+      margin-left: auto;
+    }
+    .nav-icons {
+      margin-left: auto;
+      display: flex;
+      gap: 48px;
+      align-items: center;
+
+      a > svg {
+        fill: #FFF;
+      }
+
+      a > svg:hover {
+        fill: var(--Charm-Pink-Actives);
+        }
+    }
+  }
+}
+
+
