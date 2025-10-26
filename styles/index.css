@@ -280,4 +280,8 @@ footer {
   }
 }
 
+.mobile-nav {
+  display: none;
+}
+
 
