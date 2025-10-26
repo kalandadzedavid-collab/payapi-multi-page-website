@@ -199,6 +199,14 @@
     .card {
       width: 100% !important;
       max-width: unset;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+        width: 106px;
+        height: 106px;
+      }
       p {
         min-width: 328px !important;
       }
